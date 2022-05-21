@@ -481,7 +481,7 @@ img {
   color: var(--white-accent);
   background-color: rgba(33, 150, 243, 0.9);
 
-  transition: transform 500ms ease-out;
+  transition: transform 250ms var(--timing-function);
 }
 .card .link:hover .overlay-text,
 .card .link:focus .overlay-text {
@@ -489,9 +489,7 @@ img {
 }
 .card-description {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 .card-header {
   font-weight: 700;
