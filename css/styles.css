@@ -193,13 +193,22 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: #fff;
+
+  transition: transform 300ms ease-in-out, opacity 400ms ease-in;
+}
+.backdrop.is-hidden .modal-wrapper {
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+}
+.backdrop .modal-wrapper {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 .close {
   position: absolute;
